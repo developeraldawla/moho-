@@ -1,0 +1,25 @@
+
+  Dropping all tables  33ms DONE
+
+
+   ErrorException 
+
+  Array to string conversion
+
+  at vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php:163
+    159▕      * @return bool
+    160▕      */
+    161▕     public function hasTable($table)
+    162▕     {
+  ➜ 163▕         $table = $this->connection->getTablePrefix().$table;
+    164▕ 
+    165▕         foreach ($this->getTables(false) as $value) {
+    166▕             if (strtolower($table) === strtolower($value['name'])) {
+    167▕                 return true;
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php:163
+      Illuminate\Foundation\Bootstrap\HandleExceptions::Illuminate\Foundation\Bootstrap\{closure}("Array to string conversion", "C:\Users\aiman\Downloads\moho\moho\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php")
+
+  2   vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php:184
+      Illuminate\Database\Schema\Builder::hasTable(["migrations"])
+

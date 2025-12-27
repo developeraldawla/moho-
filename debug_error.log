@@ -1,0 +1,7 @@
+
+Fatal error: Uncaught BadMethodCallException: Method Illuminate\Foundation\Application::configure does not exist. in C:\Users\aiman\Downloads\moho\moho\vendor\laravel\framework\src\Illuminate\Macroable\Traits\Macroable.php:86
+Stack trace:
+#0 C:\Users\aiman\Downloads\moho\moho\bootstrap\app.php(7): Illuminate\Foundation\Application::__callStatic('configure', Array, basePath: 'C:\\Users\\aiman\\...')
+#1 C:\Users\aiman\Downloads\moho\moho\artisan(10): require_once('C:\\Users\\aiman\\...')
+#2 {main}
+  thrown in C:\Users\aiman\Downloads\moho\moho\vendor\laravel\framework\src\Illuminate\Macroable\Traits\Macroable.php on line 86
